@@ -61,6 +61,22 @@ DecodeLabs-Internship/
     └── requirements.txt                        # Python library dependencies for Project 2
 ```
 
+## 📈 Project 1: EDA and Data Cleaning
+
+Project 1 establishes the repository's data preparation and exploratory analysis
+workflow using the `Dataset for Data Analytics.xlsx` enterprise dataset. The
+project includes:
+
+- Inspection of structural inconsistencies, missing values, duplicate records,
+    and inconsistent data types.
+- Conditional handling of missing values and conversion of numeric and date
+    fields into appropriate data types.
+- Deduplication and standardization of categorical text values.
+- Exploratory analysis using summary statistics, distributions, box plots,
+    categorical comparisons, and correlation analysis.
+- Export of the cleaned dataset to
+    `Dataset_for_Data_Analytics_Cleaned.xlsx` for downstream use.
+
 ## 📊 Project 2: Fraud Detection
 
 Project 2 develops a supervised machine learning pipeline for identifying
