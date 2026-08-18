@@ -11,7 +11,7 @@ This repository is organized modularly, with each project contained in its dedic
 | Project Folder | Description | Tech Stack & Focus Areas | Status |
 | :--- | :--- | :--- | :---: |
 | **[`Project 1/`](./Project%201/)** | **Exploratory Data Analysis & Data Cleaning** | Python, Pandas, OpenPyXL, Matplotlib, Seaborn | ✅ Completed |
-| `Project 2/` | *Upcoming Internship Module* | TBD | ⏳ Pending |
+| **[`Project 2/`](./Project%202/)** | **Supervised Learning & Fraud Detection** | Python, Pandas, NumPy, Scikit-learn, SMOTE, Matplotlib, Seaborn | ✅ Completed |
 | `Project 3/` | *Upcoming Internship Module* | TBD | ⏳ Pending |
 
 ---
@@ -49,13 +49,34 @@ source venv/bin/activate
 DecodeLabs-Internship/
 ├── .gitignore                      # Git exclusion rules (venv, checkpoints, raw PDFs)
 ├── README.md                       # Master repository documentation (this file)
-└── Project 1/                      # Project 1: EDA & Data Cleaning
+├── Project 1/                      # Project 1: EDA & Data Cleaning
     ├── Dataset for Data Analytics.xlsx         # Original raw dataset
     ├── Dataset_for_Data_Analytics_Cleaned.xlsx # Sanitized output dataset
     ├── EDA_Project_1.ipynb                     # Jupyter notebook containing analysis & code
     ├── README.md                               # Project-specific technical documentation
     └── requirements.txt                        # Python library dependencies for Project 1
+└── Project 2/                      # Project 2: Fraud Detection Pipeline
+    ├── Fraud_Detection_Project_2.ipynb          # Model training and evaluation notebook
+    ├── README.md                               # Project-specific technical documentation
+    └── requirements.txt                        # Python library dependencies for Project 2
 ```
+
+## 📊 Project 2: Fraud Detection
+
+Project 2 develops a supervised machine learning pipeline for identifying
+fraudulent credit card transactions in a highly imbalanced dataset. The workflow
+includes:
+
+- Robust scaling for the `Time` and `Amount` features.
+- Stratified 80/20 train-test splitting.
+- SMOTE applied only to the training data to prevent data leakage.
+- Comparison of Logistic Regression and Random Forest models.
+- Evaluation with fraud-class precision, recall, F1-score, and ROC-AUC.
+
+The dataset contains 284,807 transactions, including 492 fraud cases. Because the
+dataset is too large for GitHub, download `creditcard.csv` from the [Kaggle Credit
+Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+and place it inside the `Project 2/` directory before running the notebook.
 
 ## 👤 Author & Acknowledgments
 
@@ -64,4 +85,8 @@ DecodeLabs-Internship/
 - Organization: Decode Labs
 - Role: Data Science Intern
 
-For specific technical implementation, data preprocessing methodologies, and analytical findings for Project 1, please refer to the Project 1 `README.md`.
+For specific technical implementation, data preprocessing methodologies, and
+analytical findings, refer to the project documentation:
+
+- [Project 1 README](./Project%201/README.md)
+- [Project 2 README](./Project%202/README.md)
